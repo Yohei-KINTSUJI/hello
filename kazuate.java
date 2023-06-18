@@ -11,6 +11,9 @@ public class NumberGuessingGame {
         Scanner scanner = new Scanner(System.in);
 
         while (guessesTaken < maxGuesses) {
+            System.out.printf("残り回数：");
+            System.out.printf("%d", maxGuesses - guessesTaken);
+            System.out.println("回");
             System.out.print("予想した数を入力してください: ");
             int guess = scanner.nextInt();
             guessesTaken++;
